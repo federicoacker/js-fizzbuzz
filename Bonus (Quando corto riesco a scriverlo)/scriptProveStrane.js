@@ -32,6 +32,6 @@ for(let i = 0; i<= 100; i += 5) //Step di 5 quindi sempre Buzz di sicuro.
         console.log(((i-1) % 3 == 0) ? 'Fizz' : i-1);
     }
     if(i !== 0){
-        console.log((i % 3 === 0) ? 'FizzBuzz' : 'Buzz'); // Caso base, se è divisibile anche per 3, è un fizzbuzz altrimenti è un Fizz;
+        console.log((i % 3 === 0) ? 'FizzBuzz' : 'Buzz'); // Caso base, se è divisibile anche per 3, è un Fizzbuzz altrimenti è un Buzz;
     }
 }
