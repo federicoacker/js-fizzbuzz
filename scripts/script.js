@@ -29,6 +29,4 @@ for(let i = 1; i <= 100; i++){
     else{ // La parola è vuota, quindi stampiamo il numero
         console.log(i);
     }
-
-
 }
