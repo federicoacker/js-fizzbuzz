@@ -37,6 +37,9 @@ for(let i = 1; i <= 100; i++){
 // Facciamo poi la stessa cosa per i % 5 === 0 e p.lenght === 0
 // E' un po' un abuso della proprietà di shortcircuiting visto che p+='Fizz' non ci restituisce un booleano come valore
 for(let i = 1, p = ''; i <= 100; i++, p = ''){
+
+    // console.log(((!(i % 3) ? 'Fizz' : '') + (!(i % 5) ? 'Buzz' : '')) || i); // Metodo più contratto possibile visto con Samuel
+
     (i % 3 === 0) && (p += 'Fizz');
     (i % 5 === 0) && (p += 'Buzz');
     (p.length === 0) && (p += i);
